@@ -1,5 +1,6 @@
 import Foundation
 
+// Fonction pour charger et décoder un fichier JSON en un objet Swift.
 func chargerFichier<T: Decodable>(_ chemin: String) -> T? {
     let url = URL(fileURLWithPath: chemin)
     do {

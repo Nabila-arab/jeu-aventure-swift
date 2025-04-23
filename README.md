@@ -4,19 +4,40 @@ Bienvenue dans un jeu d'aventure textuel en Swift ! Explore des salles mystérie
 
 ---
 
+## 🚀 Installation et Lancement
+
+### 🧰 Prérequis
+
+- **Visual Studio Code (https://code.visualstudio.com)**
+- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**
+- **[Swift](https://www.swift.org/download/) installé sur votre machine (`swiftc` ou `swift` en CLI).**
+- **Un terminal et un éditeur de texte.**
+- Git
+
+### 🐳 Lancer avec Docker et Visual Studio Code (Dev Container)
+
+Suivez ces étapes pour configurer et démarrer l'environnement de développement à l'aide de **VS Code Dev Containers**.
+
+
 ## 🗂️ Structure du projet
 jeu-aventure-swift/ │ 
-├── main.swift # Point d'entrée du jeu 
+├── main.swift                          # Point d'entrée du jeu 
 ├── Data/ │
-     ├── monde.json # Description du monde et des salles │ 
-     ├── joueur_sauvegarde.json # Sauvegarde du joueur │
+     ├── monde.json                     # Description du monde et des salles │ 
+     ├── joueur_sauvegarde.json         # Sauvegarde du joueur │
+     ├── joueur_init.json               # etat du joueur │
+
  ├── Modeles/ │
+     ├── Enigme.swift │ 
      ├── Monde.swift │ 
      ├── Salle.swift │
-     ├── Objet.swift │ 
+     ├── Objet.swift │
+     ├── Personnage.swift │ 
+     ├── Sauvgarde.swift │  
      ├── Joueur.swift │ 
+     ├── Sortie.swift │ 
  ├── Utilitaires/ │
-     └── ChargerFichier.swift # Méthodes de chargement de fichiers JSON │
+     └── ChargerFichier.swift    # Méthodes de chargement de fichiers JSON │
 └── README.md # Ce fichier
 
 
@@ -25,11 +46,6 @@ jeu-aventure-swift/ │
 ---
 
 ## ▶️ Lancer le jeu
-
-### ✅ Prérequis
-
-- [Swift](https://www.swift.org/download/) installé sur votre machine (`swiftc` ou `swift` en CLI).
-- Un terminal et un éditeur de texte.
 
 ### 🚀 Compilation
 
@@ -50,11 +66,22 @@ Commandes disponibles
 Une fois dans le jeu, tu peux taper les commandes suivantes :
 
 
-Commande	Description
-aide	            Affiche les commandes disponibles
-map	                Affiche la carte du monde
-objets	            Affiche les objets disponibles dans la salle
-prendre	            Ramasse un objet dans la salle
-sortir	            Affiche les directions possibles
-nord/sud/est/ouest	Déplace ton joueur
-quitter	            Sauvegarde la partie et quitte le jeu
+Commande	          Description
+aide ou ?	            Affiche les commandes disponibles
+map	                    Affiche la carte du monde
+objets	                Affiche les objets disponibles dans la salle
+prendre	                Ramasse un objet dans la salle
+sortir	                Affiche les directions possibles
+pnj	                    Affiche les personnages présents dans la salle
+enigme	                Tente de résoudre l'énigme de la salle
+attendre ou dormir	    Fait passer le temps dans le jeu 
+nord/sud/est/ouest	    Déplace ton joueur
+quitter	                Sauvegarde la partie et quitte le jeu
+
+🏁 Objectif
+- Explorer toutes les salles 🗺️
+- Résoudre toutes les énigmes 🧩
+- Parler aux personnages 👤
+- Collecter des objets utiles 🧰
+- Survivre jusqu'à la fin du jeu 🎯
+- Accumuler des points de score pour mesurer vos progrès 📈

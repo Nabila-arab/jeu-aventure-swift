@@ -1,5 +1,6 @@
 import Foundation
 
+// Structure représentant une salle dans le jeu.
 // Codable indique que cette struct peut être encodée/décodée en JSON
 struct Salle: Codable {
     let id: String
