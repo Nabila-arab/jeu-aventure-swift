@@ -1,0 +1,153 @@
+{
+  "moment": "matin",
+  "salles": [
+    {
+      "id": "1",
+      "description": "Une pièce sombre avec une vieille torche.",
+      "objets": [
+        {
+          "nom": "clé",
+          "description": "Une vieille clé en fer."
+        }
+      ],
+      "sorties": {
+        "nord": "2",
+        "sud": "3",
+        "est": "4",
+        "ouest": "5"
+      }
+    },
+    {
+      "id": "2",
+      "description": "Une salle lumineuse avec une grande fenêtre.",
+      "objets": [
+        {
+          "nom": "potion",
+          "description": "Une potion rouge brillante."
+        }
+      ],
+      "sorties": {
+        "sud": "1",
+        "est": "6",
+        "ouest": "8"
+      }
+    },
+    {
+      "id": "3",
+      "description": "Un couloir étroit couvert de mousse.",
+      "objets": [],
+      "sorties": {
+        "nord": "1",
+        "est": "7"
+      }
+    },
+    {
+      "id": "4",
+      "description": "Une bibliothèque remplie de vieux livres.",
+      "objets": [
+        {
+          "nom": "livre",
+          "description": "Un livre ancien à la couverture dorée."
+        }
+      ],
+      "sorties": {
+        "ouest": "1"
+      }
+    },
+    {
+      "id": "5",
+      "description": "Un laboratoire abandonné avec des fioles cassées.",
+      "objets": [
+        {
+          "nom": "pierre",
+          "description": "Une pierre étrange qui brille dans le noir."
+        }
+      ],
+      "sorties": {
+        "est": "1"
+      }
+    },
+    {
+      "id": "6",
+      "description": "Une salle secrète avec un mécanisme caché.",
+      "objets": [],
+      "sorties": {
+        "ouest": "2"
+      }
+    },
+    {
+      "id": "7",
+      "description": "Un entrepôt rempli de caisses poussiéreuses.",
+      "objets": [
+        {
+          "nom": "corde",
+          "description": "Une corde solide et usée."
+        }
+      ],
+      "sorties": {
+        "ouest": "3"
+      }
+    },
+    {
+      "id": "8",
+      "description": "Une salle de méditation silencieuse.",
+      "objets": [
+        {
+          "nom": "amulettes",
+          "description": "Deux amulettes brillantes suspendues au mur."
+        }
+      ],
+      "sorties": {
+        "est": "2"
+      }
+    }
+  ],
+  "objets": [
+    { "nom": "clé", "description": "Une vieille clé en fer." },
+    { "nom": "potion", "description": "Une potion rouge brillante." },
+    { "nom": "livre", "description": "Un livre ancien à la couverture dorée." },
+    { "nom": "pierre", "description": "Une pierre étrange qui brille dans le noir." },
+    { "nom": "corde", "description": "Une corde solide et usée." },
+    { "nom": "amulettes", "description": "Deux amulettes brillantes." }
+  ],
+  "enigmes": [
+    {
+      "id": 1,
+      "question": "Qu'est-ce qui a des racines que personne ne voit, est plus grand qu'un arbre, monte encore plus haut, et pourtant ne pousse pas ?",
+      "reponse": "montagne",
+      "salleId": "1",
+      "resolue": false,
+      "tempsLimite": 30
+    },
+    {
+      "id": 2,
+      "question": "Je commence la nuit et finis le matin, on me voit dans les rêves, qui suis-je ?",
+      "reponse": "e",
+      "salleId": "4",
+      "resolue": false,
+      "tempsLimite": 30
+    },
+    {
+      "id": 3,
+      "question": "J'ai un cou mais pas de tête, deux bras mais pas de mains. Qui suis-je ?",
+      "reponse": "chemise",
+      "salleId": "6",
+      "resolue": false,
+      "tempsLimite": 30
+    }
+  ],
+  "pnjs": [
+    {
+      "nom": "Vieil Homme",
+      "description": "Un vieil homme à la barbe blanche, l'air sage.",
+      "salleId": "2",
+      "dialogue": "Bienvenue voyageur... Choisis ton chemin avec prudence."
+    },
+    {
+      "nom": "Gardienne",
+      "description": "Une femme en armure dorée, gardienne d'un secret.",
+      "salleId": "4",
+      "dialogue": "Seuls les dignes peuvent lire les anciens grimoires."
+    }
+  ]
+}

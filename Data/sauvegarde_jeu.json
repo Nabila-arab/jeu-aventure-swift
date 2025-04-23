@@ -1,0 +1,29 @@
+{
+  "joueurs" : [
+    {
+      "enigmesResolues" : [
+
+      ],
+      "inventaire" : [
+
+      ],
+      "nom" : "Bila",
+      "salleActuelle" : {
+        "description" : "Une salle lumineuse avec une grande fenêtre.",
+        "id" : "2",
+        "objets" : [
+          {
+            "description" : "Une potion rouge brillante.",
+            "nom" : "potion"
+          }
+        ],
+        "sorties" : {
+          "est" : "6",
+          "ouest" : "8",
+          "sud" : "1"
+        }
+      },
+      "score" : 0
+    }
+  ]
+}

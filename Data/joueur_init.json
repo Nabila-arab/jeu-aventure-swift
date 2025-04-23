@@ -1,0 +1,21 @@
+{
+  "score": 0,
+  "enigmesResolues" : [
+  ],
+  "inventaire" : [
+  ],
+  "nom" : "System",
+  "salleActuelle" : {
+    "description" : "Une bibliothèque remplie de vieux livres.",
+    "id" : "4",
+    "objets" : [
+      {
+        "description" : "Un livre ancien à la couverture dorée.",
+        "nom" : "livre"
+      }
+    ],
+    "sorties" : {
+      "ouest" : "1"
+    }
+  }
+}
